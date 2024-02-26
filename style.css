@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn {
+  border: none;
+  background-color: white;
+  padding: 0;
+  font-size: 48px;
+  cursor: not-allowed;
+}
+
+#btn:hover {
+  animation: pulse infinite 1s;
+}
+
+@keyframes pulse {
+  66% {
+    transform: scale(1.2);
+  }
+}
+
+#fire {
+  display: none;
+}
+
+#fire.grow {
+  display: block;
+  animation: grow 3s;
+  transform: scale(100);
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(100);
+  }
+}
